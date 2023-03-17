@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" onmouseenter="console.log('container ke andar mouse gya')" onclick="console.log('container me click hua')">
+        <button onclick="alert('hellopavitra'); let a = 10; console.log(a)">click</button>
+
+    </div>
+    <script>
+
+        let b = document.getElementsByClassName("container")[0]
+        b.onclick=()=>{
+            let c = document.getElementsByClassName("container")[0]
+            c.innerHTML= "helloworld"
+        }
+
+    </script>
+</body>
+</html>

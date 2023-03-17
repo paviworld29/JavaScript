@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // JS program to reverse individual words in a given
+// reverses individual words of a string
+function reverseWords(str) {
+	let st = [];
+
+	// Traverse given string and push all characters
+	// to stack until we see a space.
+	for (let i = 0; i < str.length; ++i) {
+		if (str[i] != ' ')
+			st.unshift(str[i]);
+
+		// When we see a space, we print contents
+		// of stack.
+		else {
+			while (st.length != 0) {
+				document.write(st[0]);
+			st.shift();
+			}
+		}
+	}
+
+	// Since there may not be space after
+	// last word.
+	while (st.length != 0) {
+		document.write(st[0]);
+		st.shift();
+	}
+}
+
+// Driver program to test function
+let str = prompt("enter a string");
+reverseWords(str);
+
+// This code is contributed by adityamaharshi21
+
+    </script>
+</body>
+</html>

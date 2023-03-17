@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(){
+                var name,pyhsics,chemistry,maths,total,percent;
+            }
+
+            getdata(){
+                this.name = prompt("enter the name");
+                this.pyhsics= parseInt(prompt("enter pyhscis marks"))
+                this.chemistry= parseInt(prompt("enter chemistry marks"))
+                this.maths= parseInt(prompt("enter maths marks"))
+            }
+            calci(){
+                this.total = this.chemistry+this.maths+this.pyhsics;
+                this.percent = this.total/3;
+
+            }
+
+            showdata(){
+                document.write("name"+this.name+"<br>")
+                document.write("total="+this.total+"<br>");
+                document.write("per="+this.percent+"<br>");
+      
+            }
+        }
+
+        var obj = new student();
+        obj.getdata();
+        obj.calci();
+        obj.showdata();
+    </script>
+</body>
+</html>

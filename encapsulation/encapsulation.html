@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(){
+                var name;
+                var marks;
+            }
+            getName(){
+                return this.name;}
+
+                setName(name){
+                    this.name=name;
+                }
+
+                getMarks(){
+                    return this.marks;
+                }
+                setMarks(marks){
+                    this.marks=marks;
+                }
+            }
+
+            var obj = new student();
+            var a = (prompt("enter the name"))
+            var b= (prompt("enter the marks"))
+            obj.setName(a);
+            obj.setMarks(b);
+
+            document.writeln(obj.getName()+" "+obj.getMarks());  
+
+        
+    </script>
+</body>
+</html>

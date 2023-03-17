@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<input type="text" id="tex1" placeholder="enter a number">
+<button id="btnclick" onclick="table()">click</button>
+<p id="pavi"></p>
+<script type="text/JavaScript">
+
+    function table() {
+        var n,res;
+        var ans =" ";
+
+       var tab = document.getElementById("tex1").value;
+
+  n=1;
+  while(n<=10){
+    res = tab*n;
+ans=ans+res+"<br>";
+    n++;
+
+ }
+//document.getElementById("pavi").innerHTML=ans;
+document.getElementById("pavi").innerHTML=ans;
+    }
+  
+
+ 
+    
+        
+    
+</script>
+
+</body>
+</html

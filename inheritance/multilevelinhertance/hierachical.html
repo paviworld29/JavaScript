@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            cat(){
+                document.write("this is cat");
+            }
+        }
+
+        class biganimal extends animal{
+            dog(){
+                document.write("this is dog");
+
+            }
+        }
+
+        class littleanimal extends biganimal{
+            fish(){
+                document.write("this is fish")
+            }
+        }
+
+        class verybiganimal extends littleanimal{
+            lion(){
+                document.write("this is lion")
+            }
+        }
+
+        var obj = new verybiganimal();
+        var obj = new littleanimal();
+        
+        obj.cat();
+        obj.dog();
+        obj.lion();
+        obj.fish();
+    </script>
+</body>
+</html>

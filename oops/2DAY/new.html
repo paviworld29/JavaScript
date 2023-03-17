@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bank{
+            constructor(){
+                var name,accountno,withdrow,deposit,amount;
+            }
+
+            accept(){
+                this.name =prompt("enter the name");
+                this.amount =parseInt(prompt("enter the amount"));
+                this.accountno =prompt("enter account number");
+            }
+
+            withd(amt){
+
+                document.write("withdrow amount"+amt+"<br>")
+                if(amt>this.amount){
+                    alert("no balance");
+                }
+                else{
+                    this.amount=this.amount-amt;
+                    document.write("balance after withdrow"+this.amount+"<br>")
+                }
+
+            }
+
+            depo(amt){
+                document.write("deposite amount "+amt+"<br>");
+
+                this.amount=this.amount+amt;
+                document.write("balance after deposits"+this.amount+"<br>");
+
+            }
+
+            checkbal(){
+                document.write("Account no "+this.accountno+" "+
+        "balance amount "+this.amount+"<br>");
+            }
+
+            accountdetails(){
+                document.write("account no"+this.accountno+"name"+this.name+"balance"+this.amount);
+            }
+        }
+
+        let b1=new bank();
+b1.accept();
+b1.checkbal();
+b1.depo(+(prompt("Enter amt to deposit ")));
+b1.checkbal();
+b1.withd(+(prompt("Enter amt to withdraw ")));
+b1.accountdetails();
+    </script>
+</body>
+</html>

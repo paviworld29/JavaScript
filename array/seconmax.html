@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [12, 43, 53, 25, 32, 34, 90];
+      let largest = Number.MIN_VALUE;
+      let slargest = Number.MIN_VALUE;
+      for (let i = 0; i < arr.length; i++) {
+        if (largest < arr[i]) {
+          slargest = largest;
+          largest = arr[i];
+        }
+      }
+      document.write(slargest);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class vehicla{
+            car(){
+                document.write("this is car");
+            }
+            moto(){
+                document.write("this is moto")
+            }
+        }
+
+        class fourvehical extends vehicla{
+            scooty(){
+                document.write("this is scooty");
+
+            }
+            super(){
+                document.write("this is superbike");
+            }
+        }
+
+        var obj = new fourvehical();
+        obj.car();
+        obj.moto();
+        obj.scooty();
+        obj.super();
+    </script>
+</body>
+</html>

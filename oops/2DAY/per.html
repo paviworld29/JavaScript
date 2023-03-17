@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(p,c,m){
+                this.total= p+c+m;
+                this.per = (this.total/3);
+
+                this.percent = function(){
+                    document.write("total"+this.total);
+                    document.write("per"+this.per);
+
+                }
+                this.div = function(){
+                    if(per>=60){
+                        document.write("a grade")
+                    }
+                    else
+                    if(per>=50){
+                        document.write("b grade");
+
+                    }
+                    else{
+                        document.write("c grade")
+                    }
+                }
+            }
+    
+        }
+
+        var p = parseInt(prompt("enter the physics number"));
+        var c = parseInt(prompt("enter the chemi number"));
+        var m = parseInt(prompt("enter the maths number"));
+
+        var obj = new student (p,c,m);
+        obj.percent();
+        obj.div();
+    </script>
+</body>
+</html>

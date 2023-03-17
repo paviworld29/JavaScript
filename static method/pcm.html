@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCM</title>
+  </head>
+  <body>
+    <script>
+      class pcm {
+        constructor() {
+          var name, p, c, m, per, total;
+        }
+        getData() {
+          this.name = prompt("enter name");
+          this.p = parseInt(prompt("enter physcis marksk"));
+          this.c = parseInt(prompt("enter chemistry marksk"));
+          this.m = parseInt(prompt("enter maths marksk"));
+        }
+
+        cali() {
+          this.total = this.p + this.c + this.m;
+          this.per = this.total / 3;
+        }
+
+        showData() {
+          document.write("name" + this.name+"<br>");
+          document.write("total" + this.total+"<br>");
+          document.write("percent" + this.per+"<br>");
+        }
+      }
+
+      var obj = new pcm();
+      obj.getData();
+      obj.cali();
+      obj.showData();
+    </script>
+  </body>
+</html>

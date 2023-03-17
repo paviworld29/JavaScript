@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class student {
+        constructor(a, b) {
+          this.first = a;
+          this.second = b;
+
+          this.sum = function () {
+            return this.first + this.second;
+          };
+          this.sub = function () {
+            return this.first - this.second;
+          };
+          this.mul = function () {
+            return this.first * this.second;
+          };
+          this.div = function () {
+            return this.first / this.second;
+          };
+        }
+      }
+
+      var a = parseInt(prompt("enter the value the value of a "));
+      var b = parseInt(prompt("enter the value the value of b"));
+      var obj = new student(a, b);
+      document.write(obj.sub() + "<br>");
+      document.write(obj.mul() + "<br>");
+      document.write(obj.div() + "<br>");
+      document.write(obj.sum() + "<br>");
+    </script>
+  </body>
+</html>

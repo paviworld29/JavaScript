@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fact() {
+        let i = 1;
+        let a = 1;
+        let n = document.getElementById("text1").value;
+        while (i <= n) {
+          a = a * i;
+          i = i + 1;
+          document.getElementById("ans").innerHTML = a;
+        }
+      }
+
+      function table() {
+        var i = 1,
+          tab,
+          res;
+        tab = document.getElementById("text1").value;
+        while (i <= 10) {
+          res = tab * i;
+
+          i++;
+        }
+        document.getElementById("ans").innerHTML = res;
+      }
+    </script>
+    <input type="text" id="text1" placeholder="enter a number" />
+    <br />
+    <br />
+    <button id="btn" onclick="fact()">fact</button>
+    <button id="btn1" onclick="table()">table</button>
+    <p id="ans"></p>
+  </body>
+</html>
